@@ -1,0 +1,20 @@
+.backForm{
+    color: white;
+    width: 55px;
+    padding-top: 5px;
+    height: 35px;
+    color: black;
+    background: #4F98CA;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-size: 23px;
+    border: 1px solid #2a5298;
+    cursor: pointer;
+
+}
+
+.backForm:hover{
+    background-color: #2a5298;
+    color: white;
+    border: 1px solid #4F98CA;
+}

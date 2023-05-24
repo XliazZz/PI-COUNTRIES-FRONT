@@ -1,0 +1,15 @@
+.Button{
+    border: none;
+    background: none;
+    font-family:'Archivo';
+    font-size: 100%;
+    margin: 10px;
+    color: #71b9e9;
+    cursor: pointer;
+}
+
+.Button:hover{
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #71b9e9 ;
+}

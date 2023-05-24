@@ -1,0 +1,61 @@
+.contenedorLoading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Archivo";
+    margin: 0;
+}
+
+.countryLoading{
+    height: 500px;
+    width: 600px;
+    background-color: #3f3f3f;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+.flagLoading{
+    width: 95%;
+    height: 336px;
+    border-radius: 3px;
+    margin: 15px;
+    background-color: rgb(43, 43, 43);
+    animation: myAnim 3s ease 0s infinite normal forwards;
+
+}
+
+.nameLoading{
+    padding: 30px;
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    background-color: rgb(43, 43, 43);
+    animation: myAnim 3s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 1;
+	}
+
+    25% {
+        opacity: 0.2;
+    }
+
+	50% {
+		opacity: 1;
+	}
+
+    75% {
+        opacity: 0.2;
+    }
+
+	100% {
+		opacity: 1;
+	}
+}

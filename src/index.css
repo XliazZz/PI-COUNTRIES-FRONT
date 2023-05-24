@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141010;
+
+} 
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Archivo";
+}
+

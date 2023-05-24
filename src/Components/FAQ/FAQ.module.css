@@ -1,0 +1,24 @@
+.faq{
+    color: white;
+    margin: 3%;
+}
+
+.faqHeading{
+    text-align: center;
+}
+
+.faqList{
+    list-style-type: none;
+
+}
+
+.faqItem{
+    background-color: rgb(39, 32, 32);
+    padding: 15px;
+    margin: 15px;
+    margin-bottom: 35px;
+}
+
+.faqQuestion{
+    color: #71b9e9;
+}

@@ -1,0 +1,85 @@
+.footer {
+    background-color: #000;
+    font-family: 'Archivo';
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 50px;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: aliceblue;
+}
+
+.footer-section {
+    padding: 0 15px;
+    color: aliceblue;
+    
+}
+
+.footer-section h3 {
+    margin-bottom: 30px;
+    font-size: 150%;   
+    color: aliceblue;
+
+}
+
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: aliceblue;
+
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+    color: aliceblue;
+    
+}
+
+.footer-section ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.footer-section ul li a:hover {
+    color: aliceblue;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .footer-section {
+        padding: 0;
+    }
+    
+    .footer-section h3 {
+        font-size: 120%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .footer-section h3 {
+        font-size: 110%;
+        margin-bottom: 15px;
+    }
+}

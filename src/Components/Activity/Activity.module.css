@@ -1,0 +1,57 @@
+.seasons{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.divPadre{
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(52, 52, 52);
+    margin: 2%;
+    text-align: center;
+    align-items: center;
+}
+
+.buttonHeart{
+    font-size: large;
+    padding-top: 5px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.seasons{
+    padding: auto;
+    width: 350px;
+}
+
+.textoActivity{
+    color: white;
+}
+
+.spanActivity{
+    color: white;
+    font-weight: 900;
+}
+
+.h2Activity{
+    font-weight: 100;
+}
+
+@media (max-width: 1200px) {
+    .divPadre {
+        width: 100%;
+    }
+    
+    .seasons {
+        width: 100%;
+    }
+    
+    .h2Activity {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,24 @@
+.elCapo{
+    background-color: #141010;
+
+}
+
+.contenedorCountries {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    column-gap: 50px;
+    row-gap: 30px;
+    padding: 50px;
+    min-width: 0;
+    overflow: auto;
+    margin-bottom: 143px;
+
+}
+
+.buttonBack{
+    margin: 25px;
+}

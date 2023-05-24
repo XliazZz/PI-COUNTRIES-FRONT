@@ -1,0 +1,143 @@
+.error {
+    color: red;
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.padre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%)
+;}
+
+.seasons{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form{
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border-radius: 10px;
+    background-color: #141010;
+    margin: 2%;
+}
+
+.divLabelInput {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.labelActivity{
+    font-weight: 900;
+    font-size: 120%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.inputActivity{
+    border: none;
+    border-bottom:1px solid white ;
+    height: 27px;
+    background: none;
+    color: white;
+}
+
+.inputActivity:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.difficultyButton{
+    font-size: 163%;
+    background: none;
+    border: none;
+    margin-top: 10px;
+}
+
+.starWhite{
+    color: white;
+    padding-top: 5px;
+}
+.starGold{
+    color: gold;
+    padding-top: 5px;
+}
+
+.selectActivity{
+    width: 38%;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.selectCountries{
+    height: 90%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.inputErrorContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.selected{
+    margin-left: 2%;
+    color: #F5F5F5;
+}
+
+.buttonCountry{
+    margin-left: 2%;
+    border-radius: 5px;
+    border: 1px solid white;
+    color:  white;
+    background:none;
+    cursor: pointer;
+}
+
+.buttonCountry:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.divSubmit{
+    margin-bottom: 30px;
+}
+
+.buttonCreate{
+    width: 40%;
+    margin-left: 30%;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.buttonCreate:hover{
+    background-color: #141010;
+    color: white;
+    border: 1px solid black;
+}
+
+.buttonCreate:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.success{
+    align-items: center;
+    color: green;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}

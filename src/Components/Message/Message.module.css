@@ -1,0 +1,136 @@
+.contenedorDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%)
+}
+
+.contenedorForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    height: 650px;
+    max-width: 700px; 
+    border-radius: 15px;
+    border: 1px solid gray;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 31px 2px #71b9e9;
+    -webkit-box-shadow: 0px 0px 31px 2px rgba(0,0,0,0.76);
+    -moz-box-shadow: 0px 0px 31px 2px rgba(0,0,0,0.76);
+    background-color: #141010;
+}
+
+.errorContainer{
+    position: absolute;
+    left: 44%;
+    margin-top: 5px;
+}
+
+.errorMessage{
+    color: #FF0000;
+    font-weight: 900;
+    padding-top: 10px;
+    font-size: 22px; 
+}
+
+.inputsLabel {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 70px;
+}
+
+.labelLogin{
+    font-size:1.5rem;
+    color: #71b9e9;
+    font-weight: 600;
+}
+
+.inputLogin{
+    width: 95%;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid white ;
+    color: #fff;
+    height: 27px;
+    background-color: #141010;
+    border-radius: 5px 5px 0px 0px;
+    font-family: "Archivo";
+}
+
+.inputLogin:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.contenedorForm input::placeholder {
+    color: #d6d6d6;
+    padding: 5px;
+}
+.contenedorForm textarea::placeholder {
+    color: #d6d6d6;
+    padding-left: 5px;
+    font-family: "Archivo";
+}
+
+.textarea {
+    resize: none;
+    height: 50px;
+    width: 95%;
+    margin-top: 9px;
+    background: none;
+    border: 1px solid white;
+    color: white
+};
+
+.success{
+    align-items: center;
+    color: green;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.divButton{
+    position: absolute;
+    left: 38.5%;
+    bottom: 5%;
+}
+
+.buttonCreate{
+    width: 320px;
+    font-size: 1rem;
+    background-color: #141010;
+    color: #71b9e9;
+    border: 1px solid black;
+}
+
+.buttonCreate:hover{
+    background-color: #71b9e9;
+    color: #141010;
+
+}
+
+.buttonCreate:disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.success{
+    align-items: center;
+    color: green;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.buttonBack{
+    position: relative;
+    top: -13%;
+    left: -38%;
+}

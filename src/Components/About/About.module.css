@@ -1,0 +1,116 @@
+.aboutPadre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+}
+
+.unorderedList {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.listItem {
+    height: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: white;
+    padding: 0.9em;
+    font-size: 29px;
+    font-weight: 600;
+    border-radius: 5%;  
+}
+
+.listItem:hover {
+    background-color: white;
+    color: black;
+}
+
+.listItem img {
+    width: 47%;
+    object-fit: cover;
+    margin: 15px;
+}
+
+.about{
+    color: #71b9e9;
+    font-size: 2rem;
+    margin-top: 90px;
+}
+
+.spanText{
+    color: #fff;
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+.redesSociales{
+    font-size: 40px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.h3About{
+    font-size: 1.5rem;
+    color: white;
+    padding: 0px;
+    margin-top: 50px;
+}
+
+.icono{
+    color: #2a5298;
+}
+
+.buttonBack{
+    margin-right: 92%;
+    margin-top: 30px;
+}
+
+.divSpan{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .unorderedList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .listItem {
+        height: 120px;
+        width: 150px;
+        font-size: 24px;
+    }
+    
+    .listItem img {
+        width: 40%;
+        margin: 10px;
+    }
+    
+    .about {
+        font-size: 1.5rem;
+        margin-top: 60px;
+    }
+    
+    .spanText {
+        font-size: 1rem;
+    }
+    
+    .redesSociales {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .h3About {
+        font-size: 1.2rem;
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,130 @@
+.contenedorLanding{    
+    background-color: #1e1919 ;
+}
+
+.imagesCapital {
+    max-height: 800px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    opacity: 0.65;
+}
+
+
+.countryLanding {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 300%;
+    font-family: 'Archivo';
+}
+
+.capitalLanding {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 200%;
+    font-family: 'Archivo';
+}
+
+
+/* TITULO Y SUBTITULO */
+.divTitleSubLanding{
+    margin-top: 10%;
+    color: #fff;
+    text-align: center;
+}
+
+.h3TitleLanding{
+    font-family: 'Archivo';
+    font-size: 255%;
+}
+
+.subtitleLanding{
+    font-family: 'Archivo';
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+    font-size: 130%;
+}
+
+.divButtons{
+    text-align: center;
+    margin: 5%;
+}
+
+.registerLanding{
+    margin: 2%;
+    background-color: #4F98CA;    
+    font-size: 80%;
+    border-radius: 20px;
+    padding: 1%;
+    border: 0px;
+    color: white;
+    width: 15%;
+    cursor: pointer;
+}
+
+.registerLanding:hover{
+    background-color: #141010;
+    color: #4F98CA;
+}
+
+.signLanding{
+    margin: 2%;
+    background-color: #00767c;    
+    font-size: 80%;
+    border-radius: 20px;
+    padding: 1%;
+    border: 0px;
+    color: white;
+    width: 15%;
+    cursor: pointer;
+}
+
+.signLanding:hover{
+    background-color: white;
+    color: #00767c;
+}
+
+/* LISTA */
+.contenedorUl{ 
+    font-family: 'Archivo';
+    font-size: 100%;
+    color: aliceblue;
+    text-align: center;
+    background-color: #171313;
+}
+
+.h2UlLanding{
+    margin-top: 10%;
+    padding-top: 10%;
+    margin-bottom: 7%;
+    font-size: 200%;
+}
+
+.ulLanding{
+    text-align: center;
+}
+
+.liLanding {
+    display: inline-block;
+    width: 20%;
+    margin-right: 5%;
+    vertical-align: top;
+    margin-bottom: 10%;
+    
+}
+
+.spanLanding {
+    display: block;
+}
+
+.iconLanding{
+    font-size: 200%;
+    color: white;
+}

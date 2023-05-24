@@ -1,0 +1,115 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Archivo";
+    margin: 0;
+    position: relative;
+}
+
+.card{
+    height: 500px;
+    width: 610px;
+    background-color: #3f3f3f;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imagen{
+    width: 95%;
+    height: 336px;
+    border-radius: 3px;
+    transition: .5s;
+    padding-top: 40px;
+}
+
+.intro{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    transition: .5s;
+}
+
+h1{
+    font-size: 40px;
+}
+
+p{
+    font-size: 28px;
+    visibility: hidden;
+    opacity: 0;
+    margin: 5px;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .intro{
+    height: 220px;
+    bottom: 10%;
+    color: black;
+    background-color: #ecfeffd1;
+    width: 100%;
+}
+
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+
+.closeButton{
+    background:none;
+    color: white;
+    font-size: 50px;
+    border: none;
+    margin-bottom: 3%;
+    cursor: pointer;
+
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
+.buttonContainer {
+    position: absolute;
+    top: 0;
+    left: 10;
+    z-index: 1;
+}
+
+.buttonHeart{
+    font-size: large;
+    padding-top: 5px;
+    background-color: rgb(52, 52, 52);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: 400px;
+        width: 80%;
+    }
+
+    .imagen {
+        height: 250px;
+        padding-top: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
