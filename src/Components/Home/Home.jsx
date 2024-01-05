@@ -6,6 +6,7 @@ import { getAllCountries, orderByLetter, orderByPopulation } from '../../Redux/A
 import style from './Home.module.css';
 import CountryLoading from '../CountryLoading/CountryLoading';
 import Activity from '../Activity/Activity';
+import { URL } from '../../Redux/Actions/actions';
 
 const Home = () => {
     const dispatch = useDispatch();
@@ -14,6 +15,8 @@ const Home = () => {
     const { pageNumber } = useParams(); // obtiene el número de página actual de la ruta
     const [currentPage, setCurrentPage] = useState(pageNumber ? pageNumber - 1 : 0);
     
+    console.log(allCountries);
+
     useEffect(() => {
         dispatch(getAllCountries());
     }, [dispatch]);
@@ -39,7 +42,6 @@ const Home = () => {
         setCurrentPage(selected);
         window.scrollTo(0, 0);
     }
-
     
     //Filter continent
     const [continents, setContinents] = useState([]);
@@ -47,7 +49,7 @@ const Home = () => {
     useEffect(() => {
         const fetchContinents = async () => {
             try {
-                const response = await fetch('https://pi-countries-back-production-ea0f.up.railway.app/continents');
+                const response = await fetch(`${URL}/continents`);
                 const data = await response.json();
                 setContinents(data);
             } catch (error) {
@@ -76,7 +78,7 @@ const Home = () => {
     useEffect(() => {
         const fetchActivities = async () => {
             try {
-                const response = await fetch(`https://pi-countries-back-production-ea0f.up.railway.app/activities?season=${selectedActivityName}`);
+                const response = await fetch(`${URL}/activities?season=${selectedActivityName}`);
                 const data = await response.json();
                 setActivities(data);
             } catch (error) {

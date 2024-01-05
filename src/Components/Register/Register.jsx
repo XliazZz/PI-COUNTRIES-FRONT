@@ -7,6 +7,7 @@ import { GrFormViewHide, GrFormView } from "react-icons/gr"
 import { BiArrowBack } from "react-icons/bi";
 import { AiOutlineCheck } from 'react-icons/ai'
 import Button from '../Button/Button';
+import { URL } from '../../Redux/Actions/actions';
 
 const Register = () => {
 
@@ -60,7 +61,7 @@ const Register = () => {
         formData.append('image', userData.image);
     
         try {
-            const response = await fetch('https://pi-countries-back-production-ea0f.up.railway.app/user', {
+            const response = await fetch(`${URL}/user`, {
                 method: 'POST',
                 body: formData
             });

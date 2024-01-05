@@ -17,6 +17,7 @@ import About from './Components/About/About';
 import Message from './Components/Message/Message';
 import Footer from './Components/Footer/Footer';
 import FAQ from './Components/FAQ/FAQ';
+import { URL } from './Redux/Actions/actions';
 
 function App() {
   const [access, setAccess] = useState(false);
@@ -26,7 +27,7 @@ function App() {
 
   const login = async (userData) => {
     const { email, password } = userData;
-    const URL = 'https://pi-countries-back-production-ea0f.up.railway.app/login';
+    const URL = `${URL}/login`;
   
     try {
       let endpoint = URL;
@@ -46,10 +47,10 @@ function App() {
 
   useEffect(() => {
     setFailed(null); // Reset the error message when the route changes
-  }, [window.location.pathname]);
+  }, []);
 
   useEffect(() => {
-    if (!access && pathname !== '/login' && pathname !== '/' && pathname !== "/register" && pathname !== '/faq' && pathname !== '/message' && pathname !== '/terms') {
+    if (!access && pathname !== '/login' && pathname !== '/' && pathname !== "/register" && pathname !== '/faq' && pathname !== '/message' && pathname !== '/terms' && pathname !== '/about' && pathname !== '/home' && pathname !== '/searches') {
       navigate('/login');
     } else if (access && (pathname === '/login' || pathname === '/')) {
       navigate('/home');
@@ -62,7 +63,7 @@ function App() {
 
   return (
     <div className="App">
-    {!(pathname === '/message' && !access || pathname === '/faq' && !access || pathname === '/terms' && !access || pathname === '/about' && !access) && pathname !== '/register' && pathname !== '/login' && <Nav logOut={logOut} />}
+    {!((pathname === '/message' && !access) || (pathname === '/faq' && !access) || (pathname === '/terms' && !access) || (pathname === '/about' && !access)) && pathname !== '/register' && pathname !== '/login' &&  <Nav logOut={logOut} />}
       <Routes>
         <Route path='/' element={<Landing/>}/>
         <Route path='/home' element={<Home/>}/>

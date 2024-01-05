@@ -25,6 +25,7 @@ import { SEARCH_COUNTRY_REQUEST, SEARCH_COUNTRY_SUCCESS, SEARCH_COUNTRY_ERROR,
     MESSAGE_ERROR,
 } from "../Action-Types/action-types";
 
+export const URL = 'http://localhost:3001';
 
 // SearchBar
 export const searchRequest = () => {
@@ -54,7 +55,7 @@ export const searchCountries = (name) => async (dispatch, getState) => {
     
     try {
         dispatch(searchRequest()); 
-        const response = await axios.get(`https://pi-countries-back-production-ea0f.up.railway.app/countries/byName?name=${name}`);
+        const response = await axios.get(`${URL}/countries/byName?name=${name}`);
         const data = response.data;
         dispatch(searchSuccess(data)); 
     } catch (error) {
@@ -82,7 +83,7 @@ export const getAllCountries = () => {
     return async (dispatch) => {
         dispatch(countryRequest());
         try {
-            const respose = await axios.get(`https://pi-countries-back-production-ea0f.up.railway.app/countries`);
+            const respose = await axios.get(`${URL}/countries`);
             const countries = respose.data;
             dispatch(countrySuccess(countries));
         } catch (error) {
@@ -126,7 +127,7 @@ export const postActivityError = ( error ) => ({
 export const postActivity = (activity) => {
     return async (dispatch) => {
         dispatch(postActivityRequest());
-        const endpoint = 'https://pi-countries-back-production-ea0f.up.railway.app/activity';
+        const endpoint = `${URL}/activity`;
         try {
             const { data } = await axios.post(endpoint, activity);
             dispatch(postActivitySuccess(data));
@@ -155,7 +156,7 @@ export const postFavoriteCountryError = ( error ) => ({
 export const postFavoriteCountry = (country) => {
     return async (dispatch) => {
         dispatch(postFavoriteCountryRequest());
-        const endpoint = 'https://pi-countries-back-production-ea0f.up.railway.app/fav';
+        const endpoint = `${URL}/fav`;
         try {
             const { data } = await axios.post(endpoint, country);
             dispatch(postFavoriteCountrySuccess(data));
@@ -185,7 +186,7 @@ export const deleteFavoriteCountryError = ( error ) => ({
 export const deleteFavoriteCountry = (id) => {
     return async (dispatch) => {
         dispatch(deleteFavoriteCountryRequest());
-        const endpoint = `https://pi-countries-back-production-ea0f.up.railway.app/fav/${id}`;
+        const endpoint = `${URL}/fav/${id}`;
         try {
             const { data } = await axios.delete(endpoint);
             dispatch(deleteFavoriteCountrySuccess(data));
@@ -214,7 +215,7 @@ export const postFavoriteActivityError = ( error ) => ({
 export const postFavoriteActivity = (activity) => {
     return async (dispatch) => {
         dispatch(postFavoriteActivityRequest());
-        const endpoint = 'https://pi-countries-back-production-ea0f.up.railway.app/favactivity';
+        const endpoint = `${URL}/favactivity`;
         try {
             const { data } = await axios.post(endpoint, activity);
             dispatch(postFavoriteActivitySuccess(data));
@@ -244,7 +245,7 @@ export const deleteFavoriteActivityError = ( error ) => ({
 export const deleteFavoriteActivity = (id) => {
     return async (dispatch) => {
         dispatch(deleteFavoriteActivityRequest());
-        const endpoint = `https://pi-countries-back-production-ea0f.up.railway.app/favactivity/${id}`;
+        const endpoint = `${URL}/favactivity/${id}`;
         try {
             const { data } = await axios.delete(endpoint);
             dispatch(deleteFavoriteActivitySuccess(data));
@@ -273,7 +274,7 @@ export const messageError = ( error ) => ({
 export const postMessage = ( message ) => {
     return async (dispatch) => {
         dispatch(messageRequest());
-        const endpoint = 'https://pi-countries-back-production-ea0f.up.railway.app/messages';
+        const endpoint = `${URL}/messages`;
         try {
             const { data } = await axios.post(endpoint, message);
             dispatch(messageSuccess(data));

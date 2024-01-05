@@ -16,10 +16,12 @@
 }
 
 .flagDetail{
-    width: 95%;
-    height: 356px;
     border-radius: 3px;
-    padding: 15px;
+    transition: .5s;
+    font-size: 290px;
+    margin: 50px;
+    margin-bottom: 0px;
+    padding: 10px;
 }
 
 .detail{

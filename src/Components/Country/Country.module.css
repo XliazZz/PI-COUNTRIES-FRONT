@@ -17,11 +17,12 @@
 }
 
 .imagen{
-    width: 95%;
-    height: 336px;
     border-radius: 3px;
     transition: .5s;
-    padding-top: 40px;
+    font-size: 290px;
+    padding-top: 20px;
+    margin: 0px;
+    padding: 10px;
 }
 
 .intro{
@@ -82,6 +83,7 @@ p{
     top: 0;
     left: 10;
     z-index: 1;
+    margin: 5px;
 }
 
 .buttonHeart{

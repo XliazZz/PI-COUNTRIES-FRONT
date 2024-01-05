@@ -5,6 +5,7 @@ import Modal from '../Modal/Modal';
 import DetailCountry from '../DetailCountry/DetailCountry'
 import style from './Country.module.css';
 import axios from 'axios';
+import { URL } from '../../Redux/Actions/actions';
 
 const Country = ({ id, name, flags, continents, capital, subregion, area, population }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +45,7 @@ const Country = ({ id, name, flags, continents, capital, subregion, area, popula
     useEffect(() => {
         const allCountriesFav = async () => {
             try {
-                const respose = await axios.get('https://pi-countries-back-production-ea0f.up.railway.app/fav');
+                const respose = await axios.get(`${URL}/fav`);
                 const data = respose.data;
                 setFavs(data)
             } catch (error) {
@@ -60,7 +61,7 @@ const Country = ({ id, name, flags, continents, capital, subregion, area, popula
                 setIsFav(true);
             }
             });
-    }, [favs]);
+    }, [favs, id]);
 
     return(
         <div className={style.container}>
@@ -75,7 +76,7 @@ const Country = ({ id, name, flags, continents, capital, subregion, area, popula
             </div>
             
             <div className={style.card} onClick={toggleModal}>
-                <img className={style.imagen} src={flags} alt={name} />
+                <h2 className={style.imagen}>{flags}</h2>
                 <div className={style.intro}>
                     <h1>{name}</h1>
                     <p>{capital}</p>

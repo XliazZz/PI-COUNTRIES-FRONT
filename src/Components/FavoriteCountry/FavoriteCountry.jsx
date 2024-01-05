@@ -5,6 +5,7 @@ import axios from "axios";
 import { useState, useEffect } from 'react';
 import { useSelector } from "react-redux";
 import GoBackButton from '../GoBackButton/GoBackButton';
+import { URL } from '../../Redux/Actions/actions';
 
 const FavoriteCountry = () => {
     const loading = useSelector(state => state.loading)
@@ -13,7 +14,7 @@ const FavoriteCountry = () => {
     useEffect(() => {
         const allCountriesFav = async () => {
             try {
-                const respose = await axios.get('https://pi-countries-back-production-ea0f.up.railway.app/fav');
+                const respose = await axios.get(`${URL}/fav`);
                 const data = respose.data;
                 setFavs(data)
             } catch (error) {

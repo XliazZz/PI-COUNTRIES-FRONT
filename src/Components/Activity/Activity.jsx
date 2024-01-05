@@ -8,6 +8,7 @@ import spring from '../../assert/Season/spring.jpg';
 import autumn from '../../assert/Season/autumn.jpg';
 import winter from '../../assert/Season/winter.jpg';
 import seasons from '../../assert/Season/seasons.jpg';
+import { URL } from '../../Redux/Actions/actions';
 
 const Activity = ({ id, name, difficulty, duration, season }) => {
     const dispatch = useDispatch();
@@ -29,7 +30,7 @@ const Activity = ({ id, name, difficulty, duration, season }) => {
     useEffect(() => {
         const allCountriesFav = async () => {
         try {
-            const response = await axios.get('https://pi-countries-back-production-ea0f.up.railway.app/favactivity');
+            const response = await axios.get(`${URL}/favactivity`);
             const data = response.data;
             setFavs(data);
         } catch (error) {
@@ -49,7 +50,7 @@ const Activity = ({ id, name, difficulty, duration, season }) => {
 
     const getSelectedCountries = async () => {
         try {
-        const response = await axios.get(`https://pi-countries-back-production-ea0f.up.railway.app/activity/${id}/countries`);
+        const response = await axios.get(`${URL}/activity/${id}/countries`);
         const data = response.data;
         setSelectedCountries(data);
         } catch (error) {

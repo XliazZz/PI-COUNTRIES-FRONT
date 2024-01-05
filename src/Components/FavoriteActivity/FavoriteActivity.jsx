@@ -10,7 +10,7 @@ const FavoriteActivity = () => {
     useEffect(() => {
         const allCountriesFav = async () => {
             try {
-                const respose = await axios.get('https://pi-countries-back-production-ea0f.up.railway.app/favactivity');
+                const respose = await axios.get('');
                 const data = respose.data;
                 setFavs(data)
             } catch (error) {
