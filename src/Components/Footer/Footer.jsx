@@ -46,7 +46,7 @@ const Footer = () => {
                 <div className={style['footer-section']}>
                     <h3>Social Media</h3>
                     <ul>
-                        <li><a href="https://www.instagram.com/eliasx._" target="_blank" rel="noreferrer">Instagram <FaInstagram className={style.icono} /></a></li>
+                        <li><a href="https://www.instagram.com/xliazzzx" target="_blank" rel="noreferrer">Instagram <FaInstagram className={style.icono} /></a></li>
                         <li><a href="https://www.linkedin.com/in/elias-martinez-040980246/" target="_blank" rel="noreferrer" >Linkedin <FaLinkedin className={style.icono} /></a></li>
                         <li><a href="https://www.github.com/XliazZz" target="_blank" rel="noreferrer">GitHub  <FaGithub className={style.icono} /></a></li>
                     </ul>

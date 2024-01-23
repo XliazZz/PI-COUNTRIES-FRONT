@@ -27,10 +27,9 @@ function App() {
 
   const login = async (userData) => {
     const { email, password } = userData;
-    const URL = `${URL}/login`;
   
     try {
-      let endpoint = URL;
+      let endpoint = `${URL}/login`;
       if (email) {
         endpoint += `?email=${email}&password=${password}`;
       } 

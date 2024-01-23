@@ -103,6 +103,11 @@ const Landing = () => {
             ) : null}
 
             <div className={style.divTitleSubLanding}>
+
+                <NavLink to={'/home'}>
+                    <button style={{backgroundColor: "#f32f89", marginTop: "0px", marginBottom: "50px"}} className={style.registerLanding}>Explore</button>
+                </NavLink>
+
                 <h3 className={style.h3TitleLanding}>Join Our Community of Globe Gazers</h3>
                 <span className={style.subtitleLanding}>Welcome to our website, where you can explore all the countries of the world! Sign up or log in to access all the features, like searching for countries and getting their information, creating custom travel itineraries, and adding your favorite countries to your list. Start your journey today and discover everything our website has to offer!</span>
 

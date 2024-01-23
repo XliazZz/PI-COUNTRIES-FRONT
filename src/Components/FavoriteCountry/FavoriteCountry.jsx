@@ -22,7 +22,7 @@ const FavoriteCountry = () => {
             }
         }
         allCountriesFav();
-    }, [favs])
+    }, [])
 
     return(
         <div  className={style.elCapo}>
@@ -31,6 +31,8 @@ const FavoriteCountry = () => {
                 <GoBackButton/>
             </div>
             
+            <h1 style={{textAlign: "center", color: "white"}}   >My favorites countries</h1>
+
             <div className={style.contenedorCountries}>
             {
                 favs?.map(country => {

@@ -25,7 +25,7 @@ import { SEARCH_COUNTRY_REQUEST, SEARCH_COUNTRY_SUCCESS, SEARCH_COUNTRY_ERROR,
     MESSAGE_ERROR,
 } from "../Action-Types/action-types";
 
-export const URL = 'http://localhost:3001';
+export const URL = 'https://pi-countries-back-production-3776.up.railway.app';
 
 // SearchBar
 export const searchRequest = () => {
